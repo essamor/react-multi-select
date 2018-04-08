@@ -8,6 +8,7 @@ import SelectionStatus from "./custom_components/selection_status";
 import Search from "./custom_components/search";
 import Item from "./custom_components/item";
 import SelectedItem from "./custom_components/selected_item";
+import ReproduceBugs from "./reproduce_bugs";
 
 const custom_messages = {
   searchPlaceholder: "Find...",
@@ -142,4 +143,7 @@ storiesOf("React Multi Select", module)
         showSelectAll={boolean("Show select all", true)}
       />
     );
+  })
+  .add("Reproduce Bugs", () => {
+    return <ReproduceBugs />;
   });
